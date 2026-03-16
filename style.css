@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #c5111159;
+  transition: 0.5s ease-in-out;
+  height: 70px;
+  width: 250px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px;
+  height: 100vh;
+}
+
+.div-esq {
+  width: 40%;
+  color: white;
+}
+
+.img-mario-luigi {
+  height: 500px;
+}
+
+.img-name {
+  width: 80%;
+  height: auto;
+}
+.div-video {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+video {
+  min-height: 100%;
+  /* Define a largura do vídeo para ocupar toda a largura da tela (viewport width) */
+  min-width: 100%;
+  /* Define a altura do vídeo para ocupar toda a altura da tela (viewport height) */
+  position: fixed;
+  top: 0;
+}
+.mascara {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+  z-index: -1; /* Coloca a máscara atrás do conteúdo */
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 30px;
+  padding: 20px 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  color: #c51111;
+  transition: 0.7s ease-in-out;
+  font-size: 26px;
+}
+
+header img {
+  width: 60px;
+  height: auto;
+}
+.form-contato {
+  position: fixed;
+  top: 50%;
+  left: -120px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+  /* Garante que o formulário fique acima de outros elementos */
+  transition: left 0.5s ease-in-out;
+}
+
+.mascara-form {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Cor de fundo semi-transparente para a máscara */
+  z-index: 999; /* Garante que a máscara fique abaixo do formulário, mas acima de outros elementos */
+  transition: visibility 0.5s ease-in-out;
+}
+
+input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  outline-color: #c00000;
+}
+
+textarea {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  outline-color: #c00000;
+  resize: none; /* Impede que o usuário redimensione a textarea */
+}
+
+@media(max-width: 1100px){
+    .hero {
+        flex-direction: column;
+        padding: 50px;
+        gap: 50px;
+        justify-content: flex-start;
+    }
+    
+    .div-esq {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .img-mario-luigi {
+        height: auto;
+        width: 80vw;
+    }
+    p{
+        display: none;
+    }
+
+    header img{
+        display: none;
+    }
+    header{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    header a{
+        
+        font-size: 14px;
+        gap: 10px;
+    }
+
+
+
+
+
+
+}

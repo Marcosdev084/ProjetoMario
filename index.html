@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MarioBros</title>
+  </head>
+  <body>
+
+    <div class="mascara-form" onclick="DesativarForm()"></div>
+    <header>
+      <img src="./IMG/logo-header.png" alt="Logo do jogo Mario Bros" class="img-logo" />
+      <a href=".">HOME</a>
+      <a href="">SERVIÇOS</a>
+      <a href="">CONTATO</a>
+    </header>
+    <div class="hero">
+      <div class="div-esq">
+        <img
+          src="./IMG/logo.png"
+          alt="Logo do jogo Mario Bros"
+          class="img-name"
+        />
+        <p>Bem-vindo ao Mario Brother´s encanamentos!</p>
+        <p>
+            Somos uma empresa especializada em serviços de encanamento, dedicada
+            a fornecer soluções eficientes e confiáveis para todos os seus
+            problemas de encanamento. Com uma equipe de profissionais altamente
+            qualificados e anos de experiência no setor, estamos prontos para
+            atender às suas necessidades de encanamento, seja para reparos,
+            instalações ou manutenção. Nossa missão é garantir a satisfação do
+            cliente, oferecendo serviços de alta qualidade, preços competitivos e
+            um atendimento excepcional. Entre em contato conosco hoje mesmo para
+            agendar uma consulta ou solicitar um orçamento gratuito!
+        </p>
+        <button onclick="AtivarForm()">Entre em contato!</button>
+      </div>
+      <div>
+        <img
+          src="./IMG/mario.png"
+          alt="Logo do jogo Mario Bros"
+          class="img-mario-luigi"
+        />
+      </div>
+    </div>
+
+    <div class="div-video">
+      <video src="./IMG/video.mp4" autoplay muted loop></video>
+    </div>
+    <div class="mascara"></div>
+    </div>
+
+    <a href="https://wa.me/5584996727507?text=Ol%C3%A1!%0AFiquei%20sabendo%20que%20voc%C3%AA%20%C3%A9%20bem%20diva%20e%20gostaria%20de%20dicas.%20Pode%20me%20ajudar%3F">
+        <img src="./IMG/whatsapp.png" alt="ícone do whatsapp" class="whatsapp" />
+    </a>
+
+    <form class="form-contato" 
+            action="https://formcarry.com/s/SxDSb4H4PgV"
+            method="POST"
+            enctype="multipart/form-data">
+        <input type="text" name="nome" placeholder="Digite seu nome" />
+        <input type="tel" name="telefone" placeholder="Digite seu telefone" />
+        <textarea name="solicitacao" placeholder="Digite sua solicitação"></textarea>
+        <button type="submit">ENVIAR</button>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
